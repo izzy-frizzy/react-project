@@ -4,6 +4,9 @@ import logo from "./components/images/logo.svg"
 import illustration from "./components/images/illustration-working.svg"
 import background1 from "./components/images/bg-shorten-desktop.svg"
 import background2 from "./components/images/bg-boost-desktop.svg"
+import brandLogo from "./components/images/icon-brand-recognition.svg"
+import detailedLogo from "./components/images/icon-detailed-records.svg"
+import customLogo from "./components/images/icon-fully-customizable.svg"
 import "./App.css";
 
 const img = (name) => `/images/${name}`;
@@ -154,7 +157,7 @@ function Features() {
 
       <section id="cards">
         <div className="card" id="card1">
-          <img id="brand" src={img("icon-brand-recognition.svg")} alt="" />
+          <img id="brand" src={brandLogo} alt="" />
           <h3>Brand Recognition</h3>
           <p>
             Boost your brand recognition with each click. Generic links don’t
@@ -165,7 +168,7 @@ function Features() {
         <div id="blue-line"></div>
 
         <div className="card" id="card2">
-          <img id="deatiled-records" src={img("icon-detailed-records.svg")} alt="" />
+          <img id="detailed-records" src={detailedLogo} alt="" />
           <h3>Detailed Records</h3>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -174,7 +177,7 @@ function Features() {
         </div>
 
         <div className="card" id="card3">
-          <img id="customizable" src={img("icon-fully-customizable.svg")} alt="" />
+          <img id="customizable" src={customLogo} alt="" />
           <h3>Fully Customizable</h3>
           <p>
             Improve brand awareness and content discoverability through
