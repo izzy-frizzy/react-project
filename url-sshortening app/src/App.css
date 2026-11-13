@@ -116,12 +116,16 @@ main {
 #input-bg {
   background-color: hsl(257, 27%, 26%);
   /* display: block; */
-  transform: translateY(150px);
+  transform: translateY(90px);
+  transform: translateX(90px);
+  border-radius: 10px;
+
 }
 #input-container {
   transform: translate(-10px, -20px);
   gap: 15px;
   display: flex;
+  /* align-items: center; */
 }
 #input-Field {
   width: 800px;

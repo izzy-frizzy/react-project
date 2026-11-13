@@ -2,7 +2,8 @@ import { useState } from "react";
 import { token } from "./components/secrete/secrete";
 import logo from "./components/images/logo.svg"
 import illustration from "./components/images/illustration-working.svg"
-import background1 from "./components/images/bg-boost-desktop.svg"
+import background1 from "./components/images/bg-shorten-desktop.svg"
+import background2 from "./components/images/bg-boost-desktop.svg"
 import "./App.css";
 
 const img = (name) => `/images/${name}`;
@@ -188,7 +189,7 @@ function Features() {
 function Boost() {
   return (
     <div id="slice">
-      <img src={img("bg-boost-desktop.svg")} alt="" />
+      <img src={background2} alt="" />
       <div id="inner-slice">
         <h2>Boost your links today</h2>
         <p id="get-started2">Get Started</p>
