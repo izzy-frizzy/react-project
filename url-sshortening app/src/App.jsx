@@ -70,7 +70,6 @@ function Hero() {
         </p>
         <p id="get-started1">Get Started</p>
       </div>
-      {/* illustrationwork */}
       <img id="illustration" src={illustration} alt="" />
     </div>
   );
@@ -103,7 +102,7 @@ function ShortenForm({ onAdd }) {
   return (
     <section id="input-layer">
       <img id="input-bg" src={background1} alt="" />
-      <div id="input-container">
+    
         <form id="form" onSubmit={handleSubmit}>
           <input
             id="input-Field"
@@ -114,9 +113,9 @@ function ShortenForm({ onAdd }) {
             onChange={(e) => setValue(e.target.value)}
           />
           <button id="shorten-it">Shorten It!</button>
+          <br></br>
           <p id="error-msg" className="error-msg">{error}</p>
         </form>
-      </div>
     </section>
   );
 }
