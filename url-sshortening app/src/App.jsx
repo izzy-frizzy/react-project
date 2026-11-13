@@ -133,13 +133,16 @@ function LinkItem({ link }) {
 
   return (
     <li>
-      {link.original} {link.short}{" "}
+      <span className="original-link">{link.original}</span>
+      <a className="short-link" href={link.short} target="_blank" rel="noreferrer">
+        {link.short}
+      </a>
       <button
         type="button"
         className={`copy-btn ${status === "copied" ? "copied" : ""}`}
         onClick={handleCopy}
       >
-        {status === "copied" ? "copied!" : status === "failed" ? "failed" : "copy"}
+        {status === "copied" ? "Copied!" : status === "failed" ? "Failed" : "Copy"}
       </button>
     </li>
   );

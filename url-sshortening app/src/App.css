@@ -73,7 +73,7 @@ main {
 }
 
 #hero {
-  display:flex;
+  display: flex;
   margin-left: 180px;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -119,11 +119,11 @@ main {
 #input-bg {
   background-color: hsl(257, 27%, 26%);
   display: block;
-  transform: translate(-100px,90px);
+  transform: translate(-150px, 90px);
   border-radius: 10px;
 }
 #form {
-  transform: translate(-1100px, 100px);
+  transform: translate(-1180px, 80px);
   gap: 15px;
   display: flex;
   /* flex-direction: row; */
@@ -149,54 +149,80 @@ input::placeholder {
   border: none;
   cursor: pointer;
 }
-#shorten-it:hover{
+#shorten-it:hover {
   background-color: hsl(161, 84%, 83%);
 }
- #input-Field.error {  /*when theres an error it turns red */
-    border: 2px solid #f46262;
+#input-Field.error {
+  /*when theres an error it turns red */
+  border: 2px solid #f46262;
 }
-#input-Field.error::placeholder { /*when theres an error it turns red */
-    color: #f46262;
-    opacity: 0.6;
+#input-Field.error::placeholder {
+  /*when theres an error it turns red */
+  color: #f46262;
+  opacity: 0.6;
 }
-.error-msg { /*when theres an error it turns red */
-    color: #f46262;
-    font-style: italic;
-    font-size: 0.85rem;
-    margin: 6px 0 0;
+.error-msg {
+  /*when theres an error it turns red */
+  color: #f46262;
+  font-style: italic;
+  font-size: 0.85rem;
+  margin: 6px 0 0;
 }
-#results{
+#results {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
+  margin-top: 100px;
+  max-width: 1110px;
+  padding: 0px;
 }
-#results li{
-  margin-top: 70px;
-  border-radius: 10%;
+#results li {
+  border-radius: 10px;
   background-color: white;
   list-style: none;
-  padding-left: 200px;
-  padding-right: 200px;
+  /* padding-left: 250px;
+  padding-right: 250px; */
+  padding: 16px 32px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: black solid 1px;
+  max-width: 1110px;
+}
+
+.original-link {
+  flex: 1; /* pushes the short link and button to the right */
+  min-width: 0; /* lets long URLs shrink instead of overflowing */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: hsl(255, 11%, 22%);
+}
+
+.short-link {
+  color: hsl(180, 66%, 49%);
+  text-decoration: none;
 }
 
 .copy-btn {
-    background: #2acfcf;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    width: 103px;
-    height: 40px;
-    font-weight: 700;
-    font-family: inherit;
-    cursor: pointer;
+  background: #2acfcf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 103px;
+  height: 40px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
 }
 .copy-btn:hover {
-    background: hsl(161, 84%, 83%);
+  background: hsl(161, 84%, 83%);
 }
 
 .copy-btn.copied {
-    background: hsl(257, 27%, 26%);
+  background: hsl(257, 27%, 26%);
 }
 #grey {
   background-color: hsl(0, 0%, 88%);
@@ -356,7 +382,6 @@ footer {
 @media (max-width: 375px) {
   body {
     font-size: 16px;
-    
   }
 
   /* ---------- Header ---------- */
@@ -455,7 +480,7 @@ footer {
     transform: translateY(310px);
   }
   #form {
-    transform: translate(15px,110px);
+    transform: translate(15px, 110px);
     flex-direction: column;
     gap: 16px;
     margin: 60px;
@@ -465,19 +490,18 @@ footer {
     box-sizing: border-box;
     padding: 0 15px;
     /* border: none; */
-   
   }
   #shorten-it {
     width: 100%;
     font-weight: 700;
   }
 
-  #results li{
-  /* margin-top: 70px; */
-  border-radius: 10px;
-  background-color: white;
-  list-style: none;
-}
+  #results li {
+    /* margin-top: 70px; */
+    border-radius: 10px;
+    background-color: white;
+    list-style: none;
+  }
 
   /* ---------- Advanced Statistics ---------- */
   #grey {
@@ -502,7 +526,9 @@ footer {
     width: calc(100% - 48px);
     margin: 100px 0 80px;
   }
-  .card,#card2,#card3 {
+  .card,
+  #card2,
+  #card3 {
     position: relative;
     z-index: 1; /* sits above the blue line */
     box-sizing: border-box;
