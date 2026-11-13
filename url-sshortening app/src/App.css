@@ -290,9 +290,9 @@ input::placeholder {
 #inner-slice p {
   background-color: hsl(180, 66%, 49%);
   border-radius: 20px;
-  padding: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: white;
   text-align: center;
   margin-right: 650px;

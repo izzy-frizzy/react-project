@@ -7,6 +7,11 @@ import background2 from "./components/images/bg-boost-desktop.svg"
 import brandLogo from "./components/images/icon-brand-recognition.svg"
 import detailedLogo from "./components/images/icon-detailed-records.svg"
 import customLogo from "./components/images/icon-fully-customizable.svg"
+import fl from "./components/images/icon-facebook.svg"
+import tl from "./components/images/icon-twitter.svg"
+import pl from "./components/images/icon-pinterest.svg"
+import il from "./components/images/icon-instagram.svg"
+
 import "./App.css";
 
 const img = (name) => `/images/${name}`;
@@ -230,10 +235,10 @@ function Footer() {
         </section>
 
         <section id="logo-images">
-          <img src={img("icon-facebook.svg")} alt="Facebook" />
-          <img src={img("icon-twitter.svg")} alt="Twitter" />
-          <img src={img("icon-pinterest.svg")} alt="Pinterest" />
-          <img src={img("icon-instagram.svg")} alt="Instagram" />
+          <img src={fl} alt="Facebook" />
+          <img src={tl} alt="Twitter" />
+          <img src={pl} alt="Pinterest" />
+          <img src={il} alt="Instagram" />
         </section>
       </div>
 
