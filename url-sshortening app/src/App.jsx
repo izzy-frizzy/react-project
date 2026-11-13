@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { token } from "./components/secrete/secrete";
 import logo from "./components/images/logo.svg"
+import illustration from "./components/images/illustration-working.svg"
+import background1 from "./components/images/bg-boost-desktop.svg"
 import "./App.css";
 
-// Images live in /public/images, so they are referenced as /images/...
 const img = (name) => `/images/${name}`;
 
 async function shortenLink(originalLink) {
@@ -29,7 +30,7 @@ function Header() {
   return (
     <header>
       <nav id="navbar" role="navigation">
-        <img id="logo" src='/components/images/logo.svg' alt="Shortly" />
+        <img id="logo" src={logo} alt="Shortly" />
         <ul id="nav-links">
           <li>Features</li>
           <li>Pricing</li>
@@ -60,7 +61,8 @@ function Hero() {
         </p>
         <p id="get-started1">Get Started</p>
       </div>
-      <img id="illustration" src={img("illustration-working.svg")} alt="" />
+      {/* illustrationwork */}
+      <img id="illustration" src={illustration} alt="" />
     </div>
   );
 }
@@ -91,7 +93,7 @@ function ShortenForm({ onAdd }) {
 
   return (
     <section id="input-layer">
-      <img id="input-bg" src={img("bg-shorten-desktop.svg")} alt="" />
+      <img id="input-bg" src={background1} alt="" />
       <div id="input-container">
         <form id="form" onSubmit={handleSubmit}>
           <input
