@@ -497,11 +497,13 @@ footer {
     gap: 5px;
     padding-bottom: 10px;
     width: auto;
+    
   }
 
  .original-link {
-    padding: 16px;
+    padding: 5px;
     border-bottom: 1px solid #e6e6e6;
+    
   }
 
   .short-link {
