@@ -11,10 +11,7 @@ import fl from "./components/images/icon-facebook.svg"
 import tl from "./components/images/icon-twitter.svg"
 import pl from "./components/images/icon-pinterest.svg"
 import il from "./components/images/icon-instagram.svg"
-
 import "./App.css";
-
-const img = (name) => `/images/${name}`;
 
 async function shortenLink(originalLink) {
   const response = await fetch("https://api-ssl.bitly.com/v4/shorten", {
